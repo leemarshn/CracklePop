@@ -7,8 +7,6 @@ public class Main {
         int i;
         String k = "";
 
-        int j = 800%3;
-//        System.out.println(j);
 
         for (i=1; i<=100; i++){
 
@@ -17,20 +15,22 @@ public class Main {
             if (i%3==0){
                 k = "Crackle";
             }
+
             if(i%5==0){
                 k = "Pop";
             }
             if (i%3==0 && i%5==0){
                 k = "CracklePop";
             }
-            if (k=="Crackle" || k == "Pop" || k=="CracklePop"){
+            if (k.equals( "Crackle") || k.equals("Pop") || k.equals("CracklePop")){
 
                 System.out.println(k);
 
             }else System.out.println(i);
-            
+
         }
 
 
-	  }
+    }
 }
+
