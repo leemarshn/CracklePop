@@ -23,8 +23,12 @@ public class Main {
             if (i%3==0 && i%5==0){
                 k = "CracklePop";
             }
+            if (k=="Crackle" || k == "Pop" || k=="CracklePop"){
 
-            System.out.println(i + k);
+                System.out.println(k);
+
+            }else System.out.println(i);
+            
         }
 
 
